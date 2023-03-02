@@ -1,0 +1,78 @@
+<!-- Purchase page that proceeds with the purchase of the selected book -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project - Purchase page (Kim Ho Jin, 2016314786)</title>
+    <link rel="stylesheet" href="css/purchasePageStyle.css?after">
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+    	<div class="container">
+    		<div class="row justify-content-between align-items-center">
+    			<div class="brand-name">
+    				<a href="buyerMainPage.html">SKKU BOOK MARKET</a>
+    			</div>
+    			<nav class="nav">
+    				<ul>
+              <li><a href="./buyerMainPage.html">Home</a></li>
+  						<li><a href="./buyerMarketPage.jsp">Market</a></li>
+  						<li><a href="./buyerPurchaseListPage.jsp">Purchase List</a></li>
+  						<li><a href="#"></a></li>
+  						<li><a href="./homePage.html">Logout</a></li>
+    				</ul>
+    			</nav>
+    		</div>
+    	</div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Purchase Section Start -->
+  	<section class="purchase-section" id="purchase">
+  		<div class="container">
+  			<div class="row">
+  				<div class="purchase-img">
+  					<div class="img-box">
+  						<img src="img/purchase.jpg">
+  					</div>
+  				</div>
+  				<div class="purchase-content">
+  					<div class="row">
+  						<div class="section-title">
+  							<h1> Purchase Information </h1>
+  						</div>
+  					</div>
+
+            <!-- Connect backend to reflect purchase information in the database -->
+  			    <form action="buyerPurchase.jsp" method="post">
+  			    <h1 class="title-control">Book Title: </h1>
+  			    <input type="text" id="title" name="title" class="input-control" value="" readonly>
+            <br>
+            <h1 class="title-control">Seller: </h1>
+            <input type="text" id="seller" name="seller" class="input-control" value="" readonly>
+            <br>
+            <h1 class="title-control">Price: </h1>
+            <input type="text" id="price" name="price" class="input-control" value="" readonly>
+            <br><br>
+            <h3>Do you want to proceed with the purchase?</h3>
+            <br>
+            <button class="btn btn-style">YES, I want to purchase</button>
+            </form>
+
+            <a href="./buyerMarketPage.jsp" class="btn btn-style">NO, thanks</a>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  	<!-- Purchase Section End -->
+
+    <!-- Copyright text -->
+  	<p class="copyright">&copy; 2022 Kim Ho Jin</p>
+
+  	<script src="js/main.js" type="text/javascript"></script>
+  	<script>purchaseInfo();</script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!-- Sign-up, Login page for buyer -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project - Register page (Kim Ho Jin, 2016314786)</title>
+  	<link rel="stylesheet" href="css/registerPageStyle.css">
+  </head>
+
+  <body>
+    <!-- Form Section Start -->
+    <div class="container" id="container">
+      <div class="row">
+        <!-- Sign Up Start -->
+        <div class="col align-items-center flex-col sign-up">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-up">
+
+              <!-- Connect backend to reflect sign-up information in the database -->
+              <form action="buyerValidate.jsp" method="post">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" name="username" placeholder="Username">
+              </div>
+
+              <div class="input-group">
+                <i class="bx bx-mail-send"></i>
+                <input type="email" name="email" placeholder="Email">
+              </div>
+
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" name="password" placeholder="Password">
+              </div>
+
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" name="confirm" placeholder="Confirm password">
+              </div>
+
+              <button>Sign up</button>
+              </form>
+
+              <p>
+                <span>Already have an account?</span>
+                <!-- Switch to login window -->
+                <b onclick="toggle()" class="pointer">Login here</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Sing Up End -->
+
+        <!-- Login Start -->
+        <div class="col align-items-center flex-col login">
+          <div class="form-wrapper align-items-center">
+            <div class="form login">
+
+              <!-- Connect backend to reflect login information in the database -->
+              <form action="buyerLogin.jsp" method="post">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" name="email" placeholder="Email">
+              </div>
+
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" name="password" placeholder="Password">
+              </div>
+
+              <button>Login</button>
+              </form>
+
+              <p>
+                <span>Don't have an account?</span>
+                <!-- Switch to sign-up window -->
+                <b onclick="toggle()" class="pointer">Sign up here</b>
+              </p>
+            </div>
+          </div>
+          <div class="form-wrapper"></div>
+        </div>
+        <!-- Login End -->
+      </div>
+      <!-- Form Section End -->
+
+    <!-- Content Section Start -->
+    <div class="row content-row">
+      <!-- Login Content Start -->
+      <div class="col align-items-center flex-col">
+        <div class="text login">
+          <h2>Welcome, Buyer!</h2>
+        </div>
+        <div class="img login"></div>
+      </div>
+      <!-- Login Content End -->
+
+      <!-- Sing Up Content Start -->
+      <div class="col align-items-center flex-col">
+        <div class="text sign-up">
+          <h2>Join with us, Buyer!</h2>
+        </div>
+        <div class="img sign-up"></div>
+      </div>
+      <!-- Sign Up Content End -->
+    </div>
+    <!-- Content Section End -->
+  </div>
+  </body>
+
+  <script src="js/main.js"></script>
+</html>

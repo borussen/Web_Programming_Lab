@@ -1,0 +1,198 @@
+<!-- Main page for buyer -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Final Project - Main page (Kim Ho Jin, 2016314786)</title>
+		<link rel="stylesheet" href="css/mainPageStyle.css">
+		<link rel="stylesheet" href="css/swiper.css">
+	</head>
+
+	<body>
+	<!-- Header Start -->
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="brand-name">
+					<a href="buyerMainPage.html">SKKU BOOK MARKET</a>
+				</div>
+				<nav class="nav">
+					<ul>
+						<li><a href="#banner">Home</a></li>
+						<li><a href="#information">Information</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="./buyerMarketPage.jsp">Market</a></li>
+						<li><a href="./buyerPurchaseListPage.jsp">Purchase List</a></li>
+						<li><a href="#"></a></li>
+						<li><a href="./homePage.html">Logout</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<!-- Banner Section Start -->
+	<section class="banner-section" id="banner">
+			<div class="slider">
+					<div class="swiper-container">
+							<div class="swiper-wrapper">
+									<div class="swiper-slide ss1">
+											<div class="banner-container">
+													<div class="banner-row">
+															<h2>어린 왕자 <em>Le Petit Prince</em></h2>
+															<p>If you come at 4 o'clock, I will be happy from 3 o'clock.</p>
+													</div>
+											</div>
+									</div>
+									<div class="swiper-slide ss2">
+											<div class="banner-container">
+													<div class="banner-row">
+															<h2>해리 포터 <em>Harry Potter</em></h2>
+															<p>The stories we love best do live in us forever.<br>
+															 So whether you come back by page or by the big screen,<br>
+															 Hogwarts will always be there to welcome you home.</p>
+													</div>
+											</div>
+									</div>
+									<div class="swiper-slide ss3">
+											<div class="banner-container">
+													<div class="banner-row">
+															<h2>셜록 홈즈 <em>Sherlock Holmes</em></h2>
+															<p>When you have eliminated the impossible,<br>
+															 whatever remains, however improbable, must be the truth.</p>
+													</div>
+											</div>
+									</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+					</div>
+			</div>
+	</section>
+	<!-- Banner Section End -->
+
+	<!-- Information Section Start -->
+	<section class="information-section" id="information">
+		<div class="container">
+			<div class="row">
+				<div class="information-img">
+					<div class="img-box">
+						<img src="img/skku_tree.jpg">
+					</div>
+				</div>
+				<div class="information-content">
+					<div class="row">
+						<div class="section-title">
+							<h1> Website Information </h1>
+						</div>
+					</div>
+					<p>
+						This is the flea market website where SungKyunKwan University students can freely buy and sell books.
+						Any student at SungKyunKwan University can use this website.<br>
+						<br><b> For Sellers, </b><br>
+						- Take out the unread books from your bookshelf and put them on the market.<br>
+						- Pass on the major books that you don't use anymore to your juniors.<br>
+						- Books priced at reasonable prices will be popular.<br>
+						- Buyers will look around the site and look at the books they are interested in.<br>
+						<br><b> For Buyers, </b><br>
+						- Buy the book you wanted to read at reasonable price.<br>
+						- Find the major books need for your class.<br>
+						- The popular book will be sold soon, so hurry up.<br>
+						- Sellers will offer various books for you at reasonable price.<br>
+						<br>Please feel free to enjoy the service provided by the website.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Information Section End -->
+
+	<!-- Contact Section Start -->
+	<section class="contact-section" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-img">
+					<div class="img-box">
+						<div class="section-title">
+							<h1>Contact Us</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="contact-form">
+					<!-- Start sending messages to the database over the backend -->
+					<form class="form" action="buyerMessage.jsp" method="post">
+						<div class="row">
+							<div class="left input-group">
+								<label>Name</label>
+								<input type="text" name="name" placeholder="Enter Your Name Here" class="input-control">
+							</div>
+							<div class="right input-group">
+								<label>Email</label>
+								<input type="email" name="email" placeholder="Enter Your Email Here" class="input-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-group">
+								<label>Message</label>
+								<textarea name="message" class="input-control" placeholder="Enter Your Message Here"></textarea>
+							</div>
+						</div>
+						<div class="form-btn">
+							<button class="btn btn-style">Send Message</button>
+						</div>
+					</form>
+					<!-- End sending messages to the database over the backend -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="contact-info">
+					<div class="row">
+						<div class="info-item">
+							<h5>Address</h5>
+							<p>Suwon Rebulic of Korea, 16419</p>
+						</div>
+						<div class="info-item">
+							<h5>Phone</h5>
+							<p>82 031-000-0000</p>
+						</div>
+						<div class="info-item">
+							<h5>Email</h5>
+							<p>skkubooks@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact Section End -->
+
+	<!-- Copyright text -->
+	<p class="copyright">&copy; 2022 Kim Ho Jin</p>
+
+	<script src="js/main.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script>
+			let mySwiper = new Swiper(".swiper-container", {
+					navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+					},
+					pagination: {
+							el: ".swiper-pagination",
+							type: "bullets",
+					},
+					autoplay: {
+							delay: 5000,
+					},
+					})
+	</script>
+	</body>
+</html>

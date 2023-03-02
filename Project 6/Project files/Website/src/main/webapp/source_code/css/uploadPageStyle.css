@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body, input, textarea, button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #f3f2f1;
+  margin: 0;
+  line-height: 1.5;
+}
+
+form {
+  display: inline;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+  padding: 0 15px;
+}
+.section-title h1 {
+  display: inline-block;
+  font-size: 40px;
+  color: #000000;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+}
+.section-title h1:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 80px;
+  height: 3px;
+  background-color: #285c4d;
+}
+
+/* Header Section */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.header .brand-name{
+  padding: 0 15px;
+}
+.header .brand-name a{
+  text-decoration: none;
+  font-size: 30px;
+  color: #285c4d;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
+.header .brand-name a:hover {
+  color: #17382f;
+}
+
+.header .nav{
+  padding: 0 15px;
+}
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header .nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #285c4d;
+  padding: 25px 0;
+  display: block;
+  transition: all 0.5s ease;
+}
+.header .nav ul li a:hover {
+  color: #17382f;
+}
+
+/* Upload Section */
+.upload-section {
+  padding: 240px 0 0;;
+}
+
+.upload-section .upload-img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+}
+
+.upload-section .upload-img .img-box {
+  position: relative;
+}
+.upload-section .upload-img .img-box img{
+  width: 100%;
+  display: block;
+}
+
+.upload-section .upload-content {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding: 0 15px;
+}
+
+.upload-section .section-title {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.upload-section .section-title h1 {
+  margin-bottom: 5px;
+}
+
+.category {
+  margin-top: 5px;
+}
+
+.input-control {
+  width: 50%;
+  height: 45px;
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+.input-control:focus {
+  outline: none;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.btn-style {
+  background-color: #285c4d;
+  color: #ffffff;
+  border: solid 2px transparent;
+  padding: 10px 35px;
+  border-radius: 30px;
+  line-height: 1.5;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+.btn-style:hover {
+  background-color: transparent;
+  border-color: #285c4d;
+  color: #285c4d;
+}
+.btn-style:focus {
+  outline: none;
+}
+
+/* Copyright Section */
+.copyright {
+  border-top: 1px solid #c5c5c5;
+  margin-top: 240px;
+  padding: 25px 15px;
+  text-align: center;
+  color: #555555;
+  font-size: 16px;
+}
