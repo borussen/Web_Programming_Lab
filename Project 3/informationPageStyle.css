@@ -1,0 +1,49 @@
+html {
+  background-color: #A9F5A9;
+}
+
+header > h1 {
+  font-size: 40px;
+  color: #088A08;
+}
+
+p {
+  font-size: 20px;
+}
+
+table {
+  width: 100%;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+}
+th, td {
+  border-bottom: 1px solid #444444;
+  padding: 10px;
+  text-align: center;
+}
+thead tr {
+  background-color: white;
+}
+tbody tr:nth-child(2n) {
+  background-color: white;
+}
+tbody tr:nth-child(2n+1) {
+  background-color: lightgray;
+}
+
+.backButton {
+  width: 90px;
+  height: 60px;
+  margin: 30px 50px 0px 0px;
+  border: solid 2px red;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px black;
+  background-color: #FA5858;
+  color: white;
+  float: right;
+  font-size: 20px;
+}
+.backButton:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #CD3B3B;
+}
