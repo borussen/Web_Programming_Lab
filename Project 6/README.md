@@ -1,14 +1,22 @@
-# SKKU ATM Website using HTML, CSS and JavaScript 
+# SKKU Book Flea Market Website using HTML, CSS, JavaScript, JavaServer Pages and MySQL 
 
 ### Duration : Fall Semester, 2022
 
-The project contains 14 html files, 14 css files and 1 js file. 
+The submission file was composed of the following, and each description was added.
 
-The page composition of the project is as follows:
-	Login Page -> Password Page -> Main Page -> Information Page / Withdraw Page / Deposit Page / Transfer Page
+1. Project files : <br>
+This directory contains all the necessary files needed to run and test the project including the source code. <br>
+In my case, I ran the project on tomcat v8.5 server through eclipse-jee. <br>
+(Source Code location: 2016314786_Kim_Hojin_final_project_files/Website/src/main/webapp/source_code/)
 
-Therefore, please start the "loginPage.html" first to launch the website.
+2. Project report : <br> 
+This is the report describing the overall configuration and functionality of the final project.
 
-As stated in the project manual, I set account number: 1234567890123456, account pin number: 1234.
+3. Database information: <br>
+Attach the create statement that creates the table used in the database, 
+and the insert statement that puts the example data into the table as sql files.
 
-Thank you for reading it.
+
+The final project start the "homePage.html" first to launch the website. <br>
+More details were explained in reports, videos and comments. <br>
+Thank you for reading it. <br>
