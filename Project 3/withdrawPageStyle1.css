@@ -1,0 +1,184 @@
+html {
+  background-color: #A9F5A9;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+input {
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  border: solid 1px black;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.inputButton > ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: inline-block;
+}
+
+.button {
+  width: 100px;
+  height: 60px;
+  margin: 30px;
+  border: solid 2px black;
+  border-radius: 12px;
+  background-color: #0B0B3B;
+  color: white;
+}
+.button:hover {
+  top: -10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: lightgray;
+  color: black;
+}
+
+.arrowButton1 {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/uparrow100copy.png");
+  background-size: cover;
+  border: none;
+}
+.arrowButton1:hover {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/uparrow100copyhover.png");
+  background-size: cover;
+  border: none;
+}
+.arrowButton1:active {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/uparrow100.png");
+  background-size: cover;
+  border: none;
+}
+
+.arrowButton2 {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/uparrow20copy.png");
+  background-size: cover;
+  border: none;
+}
+.arrowButton2:hover {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/uparrow20copyhover.png");
+  background-size: cover;
+  border: none;
+}
+.arrowButton2:active {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/uparrow20.png");
+  background-size: cover;
+  border: none;
+}
+
+.arrowButton3 {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/downarrow20copy.png");
+  background-size: cover;
+  border: none;
+}
+.arrowButton3:hover {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/downarrow20copyhover.png");
+  background-size: cover;
+  border: none;
+}
+.arrowButton3:active {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/downarrow20.png");
+  background-size: cover;
+  border: none;
+}
+
+.arrowButton4 {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/downarrow100copy.png");
+  background-size: cover;
+  border: none;
+}
+.arrowButton4:hover {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/downarrow100copyhover.png");
+  background-size: cover;
+  border: none;
+}
+.arrowButton4:active {
+  width: 110px;
+  height:100px;
+  margin: 10px;
+  background: url("assets/downarrow100.png");
+  background-size: cover;
+  border: none;
+}
+
+.enterButton {
+  width: 90px;
+  height: 60px;
+  margin-left: 20px;
+  box-shadow: 1px 1px 1px black;
+  border: solid 2px #088A08;
+  border-radius: 12px;
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  position: relative;
+  left: 160px;
+  bottom: 315px;
+}
+.enterButton:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #22741C;
+}
+
+.backButton {
+  width: 100px;
+  height: 60px;
+  margin:20px;
+  box-shadow: 1px 1px 1px black;
+  border: solid 2px red;
+  border-radius: 12px;
+  background-color: #FA5858;
+  color: white;
+}
+.backButton:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #CD3B3B;
+}
