@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="transferPageStyle1.css">
+  </head>
+
+  <body>
+    <center>
+      <div class="wrapper">
+
+        <div class="box1">
+          <h1> From </h1>
+          <select class="selectBox" id="fromBox">
+            <option value="" hidden>Choose an Account</option>
+            <option value="1234567890123456">1234567890123456</option>
+          </select>
+        </div>
+
+        <div class="box2">
+          <ul>
+            <input id="inputbox" placeholder="$0000.00" readonly> </input>
+            <br>
+            <li><input class="button" type="button" value="1" onclick="operate(1)"></li>
+            <li><input class="button" type="button" value="2" onclick="operate(2)"></li>
+            <li><input class="button" type="button" value="3" onclick="operate(3)"></li>
+            <br>
+            <li><input class="button" type="button" value="4" onclick="operate(4)"></li>
+            <li><input class="button" type="button" value="5" onclick="operate(5)"></li>
+            <li><input class="button" type="button" value="6" onclick="operate(6)"></li>
+            <br>
+            <li><input class="button" type="button" value="7" onclick="operate(7)"></li>
+            <li><input class="button" type="button" value="8" onclick="operate(8)"></li>
+            <li><input class="button" type="button" value="9" onclick="operate(9)"></li>
+            <br>
+            <li><input class="button" type="button" value="0" onclick="operate(0)"></li>
+            <li><input class="button" id="decimalButton" type="button" value="." onclick="decimalPoint()"></li>
+            <li><input class="delButton" type="button" value="Del" onclick="deleteButton()"></li>
+            <br>
+            <li><input class="enterButton" type="button" value="Enter" onclick="enterTransfer()"></li>
+          </ul>
+        </div>
+
+        <div class="box3">
+          <h1> To </h1>
+          <select class="selectBox" id="toBox">
+            <option value="" hidden>Choose an Account</option>
+            <option value="0002016314786000">0002016314786000</option>
+          </select>
+        </div>
+
+      </div>
+    </center>
+
+    <input class="backButton" type="button" value="Back" onclick="backButton()">
+
+    <script src="main.js" type="text/javascript"> </script>
+  </body>
+</html>
