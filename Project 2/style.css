@@ -1,0 +1,218 @@
+/* Web Prgramming Assignment 2
+
+Date: 1 October 2022
+Author: Kim Ho Jin (2016314786) */
+
+.wrapper {
+  display: grid;
+  background-color: #3d3d37;
+  grid-template-columns: 1fr 9fr;
+  grid-auto-rows: minmax(10px, auto);
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.subwrapper1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  margin: 30px;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.subwrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.3vw;
+}
+
+.box1 {
+  grid-column: 1/3;
+  color: white;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+}
+.box1 > img {
+  max-width: 15%;
+  height: auto;
+  margin: 5px 0px 5px 40px;
+  margin-right: auto;
+}
+.box1 > ul {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.box2 {
+  grid-row: 2/7;
+  color: white;
+  font-size: 1.5vw;
+}
+.box2 > ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+}
+.box2 > ul > li {
+  padding: 2vw;
+}
+
+.box3 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.box3 > img {
+  max-width: 100%;
+  height: auto;
+}
+.box3_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box3_center > h3 {
+  font-size: 3.5vw;
+}
+.box3_round {
+  box-sizing: border-box;
+  border: 0.2vw solid white;
+  border-radius: 20px;
+  width: 12vw;
+}
+.box3_round > p {
+  font-size: 2vw;
+}
+
+.box4 {
+  background-color: white;
+}
+.box4 > img {
+  max-width: 20%;
+  height: auto;
+  margin: 2% 5% 2% 10%;
+  float: left;
+}
+.box4 > h1 {
+  font-size: 2.2vw;
+}
+.box4 > p {
+  font-size: 1.2vw;
+}
+
+.box5 {
+  background-image: url('assets/bg_offer.png');
+  background-size: contain;
+  position: relative;
+  color: white;
+}
+.box5_title {
+  font-size: 3vw;
+}
+.box5_subbox1 {
+  background-color: lightgray;
+  font-size: 1.8vw;
+}
+.box5_subbox2 {
+  background-color: lightgray;
+  font-size: 1.8vw;
+}
+.box5_image {
+  max-width: 80%;
+  height: auto;
+  margin: 15%;
+}
+.box5_name {
+  color: black;
+}
+.box5_original {
+  color: red;
+  text-decoration: line-through;
+}
+.box5_sale {
+  color: green;
+}
+
+.box6 {
+  background-color: white;
+}
+.box6_table {
+  margin-left: 3%;
+  margin-bottom: 5%;
+}
+.box6_title {
+  text-align: center;
+  font-size: 1.5vw;
+}
+.box6_body {
+  font-size: 1.3vw;
+}
+.box6_beefImg {
+  max-width: 55%;
+  height: auto;
+  margin: 3%;
+  float: left;
+}
+.box6_salmonImg {
+  max-width: 50%;
+  height: auto;
+  margin: 3%;
+  float: left;
+}
+.box6_soupImg {
+  max-width: 55%;
+  height: auto;
+  margin: 3%;
+  float: left;
+}
+
+.box7 {
+  color: white;
+  font-size: 2vw;
+}
+.box7_title {
+  font-size: 3vw;
+}
+.box7_subbox1 {
+  grid-column: 1;
+}
+.box7_table {
+  margin-left: 3vw;
+  margin-bottom: 5vw;
+}
+.box7_name {
+  background-color: lightgray;
+  width: 30vw;
+  height: 2vw;
+  float: right;
+}
+.box7_email {
+  background-color: lightgray;
+  width: 30vw;
+  height: 2vw;
+  float: right;
+}
+.box7_messageTitle {
+  vertical-align: top;
+}
+.box7_message {
+  background-color: lightgray;
+  width: 30vw;
+  height: 10vw;
+  float: right;
+}
+.box7_button {
+  background-color: lightgray;
+  border: 0.1vw solid;
+  border-radius: 10%;
+  width: 8vw;
+  height: 2vw;
+  float: right;
+}
+.box7_subbox2 {
+  grid-column: 2;
+}
