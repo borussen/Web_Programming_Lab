@@ -1,0 +1,33 @@
+html {
+  background-color: #A9F5A9;
+}
+
+header {
+  font-size: 30px;
+}
+
+div > ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: inline-block;
+}
+
+.okButton {
+  width: 500px;
+  height: 60px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px black;
+  border: solid 2px black;
+  border-radius: 12px;
+  font-size: 25px;
+  background-color: #0B0B3B;
+  color: white;
+}
+.okButton:hover {
+  top: -7px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #4374D9;
+}
