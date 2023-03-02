@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="depositPageStyle2.css">
+  </head>
+
+  <body>
+    <center>
+      <header>
+        <h1> Are you sure you want to deposit the amount specified? </h1>
+        <h2 id="depositBalance"> </h2>
+      </header>
+
+      <div>
+        <ul>
+          <li><input class="yesButton" type="button" value="YES" onclick="yesDeposit()"></li>
+          <li><input class="noButton" type="button" value="NO" onclick="noDeposit()"></li>
+        </ul>
+      </div>
+    </center>
+
+    <script src="main.js" type="text/javascript"> </script>
+    <script> getDeposit(); </script>
+  </body>
+</html>
