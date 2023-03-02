@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="withdrawPageStyle1.css">
+  </head>
+
+  <body>
+    <center>
+      <header><p> Enter the amount to withdraw </p></header>
+
+      <div class="wrapper">
+
+        <div class="box1">
+          <ul>
+            <li><p> Quick Links </p></li>
+            <br>
+            <li><input class="button" type="button" value="20" onclick="quickLink(20)"></li>
+            <br>
+            <li><input class="button" type="button" value="40" onclick="quickLink(40)"></li>
+            <br>
+            <li><input class="button" type="button" value="60" onclick="quickLink(60)"></li>
+            <br>
+            <li><input class="button" type="button" value="80" onclick="quickLink(80)"></li>
+          </ul>
+        </div>
+
+        <div class="box2">
+          <ul>
+            <li><button class="arrowButton1" onclick="arrowButton(100)" readonly></li>
+            <br>
+            <li><button class="arrowButton2" onclick="arrowButton(20)" readonly></li>
+            <br>
+            <li><input id="inputbox" placeholder="0" value="0" readonly> </input></li>
+            <br>
+            <li><button class="arrowButton3" onclick="arrowButton(-20)" readonly></li>
+            <br>
+            <li><button class="arrowButton4" onclick="arrowButton(-100)"></li>
+            <br>
+            <li><input class="enterButton" type="button" value="Enter" onclick="enterWithdraw()"></li>
+          </ul>
+        </div>
+
+        <div class="box3">
+          <ul>
+            <li><p> Quick Links </p></li>
+            <br>
+            <li><input class="button" type="button" value="100" onclick="quickLink(100)"></li>
+            <br>
+            <li><input class="button" type="button" value="200" onclick="quickLink(200)"></li>
+            <br>
+            <li><input class="button" type="button" value="300" onclick="quickLink(300)"></li>
+            <br>
+            <li><input class="backButton" type="button" value="Back" onclick="backButton()"></li>
+          </ul>
+        </div>
+
+      </div>
+    </center>
+
+    <script src="main.js" type="text/javascript"> </script>
+  </body>
+</html>
