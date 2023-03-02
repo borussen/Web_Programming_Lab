@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background: #384047;
+}
+
+.form {
+  width: 450px;
+  margin: 70px auto;
+}
+
+.login, .signup{
+  width: 50%;
+  height: 60px;
+  line-height: 60px;
+  background: lightgray;
+  border-top: 8px solid #2F558E;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-form, .signup-form {
+  box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+  background: #1C1C1C;
+  color: white;
+  padding: 20px;
+  clear: both;
+}
+.signup-form {
+  height: 740px;
+}
+
+.login-nextform, .signup-nextform {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  line-height: 20px;
+  background: #1C1C1C;
+  color: white;
+  padding: 20px;
+  clear: both;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.explanation {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.checkLogin input, .checkSignup input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  background: black;
+  border: 2px solid white;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: lightgray;
+  font-size: 15px;
+}
+.checkLogin input:focus, .checkSignup input:focus {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: gray;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px black inset;
+  -webkit-text-fill-color: lightgray !important;
+}
+
+.checkLogin i, .checkSignup i {
+  position: relative;
+  bottom: 40px;
+  left: 380px;
+  color: green;
+  visibility: hidden;
+}
+
+.checkLogin button, .checkSignup button {
+  position: relative;
+  bottom: 45px;
+  left: 400px;
+  padding: 5px;
+  background: #2F558E;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  visibility: hidden;
+}
+
+.checkLogin.success input, .checkSignup.success input {
+  border-color: white;
+}
+.checkLogin.success i, .checkSignup.success i {
+  visibility: visible;
+}
+.checkLogin.failure input, .checkSignup.failure input {
+  border-color: red;
+}
+.checkLogin.failure button, .checkSignup.failure button {
+  visibility: visible;
+}
+
+.checkRadio {
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.checkRadio i {
+  position: relative;
+  left: 245px;
+  color: green;
+  visibility: hidden;
+}
+
+.checkRadio button {
+  position: relative;
+  top: 0px;
+  left: 265px;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background: #2F558E;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  visibility: hidden;
+}
+
+.loginButton, .signupButton {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #2F558E;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
