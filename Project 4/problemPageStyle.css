@@ -1,0 +1,129 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #E0F8F7;
+}
+
+h1, p {
+  margin: 0;
+}
+
+<style>
+.outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+
+.inner {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+
+.content {
+  width: 700px;
+  color: #088A85;
+}
+
+.left {
+  float: left;
+  margin-bottom: 40px;
+}
+
+.right {
+  float: right;
+  margin-bottom: 20px;
+}
+
+#question {
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+progress {
+  -webkit-appearance: none;
+  margin-top: 15px;
+}
+::-webkit-progress-bar {
+  height: 30px;
+  width: 100%;
+  background-color: #E0F8F7;
+  border: solid 2px #088A85;
+  border-radius: 25px;
+}
+::-webkit-progress-value {
+  background-color: #088A85;
+  border: none;
+  border-radius: 25px;
+}
+
+#score {
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#scoreNumber {
+  font-size: 40px;
+}
+
+#problem {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.answer input {
+	display: none;
+}
+
+.answer input + label {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	margin: 5px;
+	font-size: 20px;
+	text-align: left;
+	color: black;
+	background-color: white;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	padding-left: 70px;
+	cursor: pointer;
+}
+.answer input + label:hover {
+	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+.answer input + label::before {
+	color: #fff;
+	width: 60px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	border-radius: 12px;
+	background-color: #088a85;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.answers tr:nth-child(1) td .answer input + label:before {
+	content: "A";
+}
+.answers tr:nth-child(2) td .answer input + label:before {
+	content: "B";
+}
+.answers tr:nth-child(3) td .answer input + label:before {
+	content: "C";
+}
+.answers tr:nth-child(4) td .answer input + label:before {
+	content: "D";
+}

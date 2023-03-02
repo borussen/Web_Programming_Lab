@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #E0F8F7;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  color: #088A85;
+  text-align: center;
+}
+.content h1 {
+  font-size: 60px;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  margin: 25px;
+  font-size: 25px;
+  text-align: center;
+  color: #088A85;
+  background-color: white;
+  border: solid 2px #088A85;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.button:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
